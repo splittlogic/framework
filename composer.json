@@ -1,0 +1,36 @@
+{
+    "name": "splittlogic/framework",
+    "description": "Framework package for Laravel w/ livewire",
+    "keywords": [
+        "splittlogic",
+        "framework"
+    ],
+    "homepage": "https://github.com/splittlogic/framework",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "livewire/livewire": "3.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\framework\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\framework\\frameworkServiceProvider"
+            ],
+            "aliases": {
+                "framework": "splittlogic\\framework\\Facades\\framework"
+            }
+        }
+    }
+}
